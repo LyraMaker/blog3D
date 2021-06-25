@@ -2,39 +2,99 @@
 font-family: 'Poppins', sans-serif;
 font-family: 'Rubik', sans-serif;
 */
-@mixin grdRCinza{
-    background:radial-gradient(circle, rgb(247, 245, 245) 0%, rgba(247,247,247,1) 100%);
+
+
+@mixin grdRCinza {
+    background: radial-gradient(circle, rgb(247, 245, 245) 0%, rgba(247, 247, 247, 1) 100%);
 }
 
-@mixin grdEAzul{
-    background:linear-gradient(180deg, rgb(57, 157, 206) 0%, rgba(134, 191, 218, 0.514) 100%);
+@mixin grdEAzul {
+    background: linear-gradient(180deg, rgb(57, 157, 206) 0%, rgba(134, 191, 218, 0.514) 100%);
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.39);
 }
 
-html{
-    @include grdRCinza();
-    
-}
-
-h1,h2,h3,h4,h5,h6,.title,.subtitle,.navbar-item{
+@mixin font1($bold,$italic,$underline,$shadown) {
     font-family: 'Rubik', sans-serif;
+
+    @if ($bold==1) {
+        font-weight: bold;
+    }
+
+    @if ($italic==1) {
+        font-style: italic;
+    }
+
+    @if ($underline==1) {
+        text-decoration: underline;
+    }
+
+    @if ($shadown==1) {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.39);
+    }
 }
 
-.navbar{
+
+@mixin font2($bold,$italic,$underline,$shadown) {
+    font-family: 'Poppins', sans-serif;
+
+    @if ($bold==1) {
+        font-weight: bold;
+    }
+
+    @if ($italic==1) {
+        font-style: italic;
+    }
+
+    @if ($underline==1) {
+        text-decoration: underline;
+    }
+
+    @if ($shadown==1) {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.39);
+    }
+}
+
+html {
+    @include grdRCinza();
+
+}
+
+
+.capa {
+    img {
+        height: 120px;
+    }
+
+    .title {
+        @include font1(0,0,0,1);
+    }
+
+    .subtitle {
+        @include font2(0,1,0,1)
+    }
+}
+
+.navbar {
     @include grdEAzul();
 
-    &-item{
+    &-item {
         transition: 0.3s;
         text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
     }
 
-    &-item:hover{
-        transition:  cubic-bezier(0.075, 0.82, 0.165, 1) all 0.3s;
+    &-item:hover {
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 0.3s;
         transform: translateY(3px) scale(1.05);
     }
 }
 
-.header{
-    background:url('/img/bg-contruct.jpg');
+.capa {
+    .title {}
+}
+
+.header {
+    background: url('/img/bg-contruct.jpg');
     background-size: cover;
+    background-attachment: initial;
+    background-position-y: 50%;
 }

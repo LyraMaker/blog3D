@@ -6,8 +6,17 @@ html {
   background: radial-gradient(circle, #f7f5f5 0%, #f7f7f7 100%);
 }
 
-h1, h2, h3, h4, h5, h6, .title, .subtitle, .navbar-item {
+.capa img {
+  height: 120px;
+}
+.capa .title {
   font-family: "Rubik", sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.39);
+}
+.capa .subtitle {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.39);
 }
 
 .navbar {
@@ -26,6 +35,8 @@ h1, h2, h3, h4, h5, h6, .title, .subtitle, .navbar-item {
 .header {
   background: url("/img/bg-contruct.jpg");
   background-size: cover;
+  background-attachment: initial;
+  background-position-y: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
