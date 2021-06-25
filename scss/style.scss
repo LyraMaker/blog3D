@@ -85,6 +85,7 @@ html {
     &-item:hover {
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 0.3s;
         transform: translateY(3px) scale(1.05);
+        text-shadow: rgb(15, 28, 151) 1px 3px 2px ;
     }
 }
 
