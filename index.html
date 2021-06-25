@@ -1,90 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
-<head>
-   
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap" rel="stylesheet">
+<script defer src="https://friconix.com/cdn/friconix.js"> </script>
 
-    <link rel="stylesheet" href="css/style.css">
-    <title>Site do 3D Colégios</title>
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Site do 3D Colégios</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar is-transparent">
-            <div class="navbar-menu">
-                <div class="navbar-end px-6">
-                    <a href="" class="navbar-item has-text-white is-uppercase has-text-weight-bold"><span class="icon-text"><span class="icon"><i class="fi-xnsuxl-user-solid"></i></span><span>Login</span></span> </a>
-                    <a href="" class="navbar-item has-text-white is-uppercase has-text-weight-bold"><span class="icon-text"><span class="icon"><i class="fi-xwsuxl-envelope-solid"></i></span><span>Sobre</span></span></a>
-                    <a href="" class="navbar-item  has-text-white is-uppercase has-text-weight-bold"><span class="icon-text"><span class="icon"><i class="fi-cnsuxl-question-mark"></i></span><span>Contato</span></span></a>
+  <header class="header">
+    <nav class="navbar is-transparent">
+      <div class="navbar-menu">
+        <div class="navbar-end px-6">
+          <a href="" class="navbar-item has-text-white is-uppercase has-text-weight-bold"><span class="icon-text"><span
+                class="icon"><i class="fi-xnsuxl-user-solid"></i></span><span>Login</span></span> </a>
+          <a href="" class="navbar-item has-text-white is-uppercase has-text-weight-bold"><span class="icon-text"><span
+                class="icon"><i class="fi-xwsuxl-envelope-solid"></i></span><span>Contato</span></span></a>
+          <a href="" class="navbar-item  has-text-white is-uppercase has-text-weight-bold"><span class="icon-text"><span
+                class="icon"><i class="fi-cnsuxl-question-mark"></i></span><span>Sobre</span></span></a>
+        </div>
+      </div>
+    </nav>
+    <div class="capa px-6 is-flex-desktop is-flex-tablet is-justify-content-space-between is-align-items-center ">
+      <div class="is-flex-touch is-justify-content-center is-flex-tablet">
+        <img src="img/logo.png" class="is-1by1 mx-6">
+      </div>
+      <div class="texto is-hidden-mobile mx-6">
+        <p class="frase title has-text-right">Educar é semear com sabedoria e colher com paciência</p>
+        <p class="autor subtitle has-text-right">Augusto Cury</p>
+      </div>
+    </div>
+  </header>
+  <main class="section">
+    <div class="container">
+      <div class="columns is-variable is-3">
+        <div class="column is-two-thirds">
+          <article class="card">
+            <div class="card-image">
+              <figure class="image is-3by1">
+                <img src="https://bulma.io/images/placeholders/128x128.png">
+              </figure>
+            </div>
+            <div class="card-content p-5">
+              <div class="content has-text-justified">
+                <h3 class="title">Título do artigo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt unde eius quas, facere sunt soluta
+                  recusandae voluptatum illum rerum eaque animi, quis tempora molestiae blanditiis dolore vero
+                  accusantium sapiente distinctio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                  excepturi nostrum ipsam corrupti accusamus hic, autem numquam eligendi velit assumenda provident, illo
+                  ad debitis neque dignissimos fugiat expedita atque. Saepe.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="column is-hidden-mobile">
+          <div class="card">
+            <div class="card-image content m-0 has-background-info p-4">
+              <h4 class="title m-0 has-text-white">Postagens recentes</h4>
+            </div>
+            <div class="card-content p-5">
+              <article class="media">
+                <figure class="media-left">
+                  <p class="image is-64x64">
+                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                  </p>
+                </figure>
+                <div class="media-content">
+                  <div class="content has-text-justified">
+                    <header>
+                    <h6 class="subtitle m-0">Postagem 1</h6>
+                    <p>
+                      <span class="icon-text"><span class="icon"><i
+                            class="fi-xnsuxl-user-solid"></i></span><small>@nomeAutor</small></span>
+                      <span class="icon-text"><span class="icon"><i
+                            class="fi-xnsuxl-calendar-solid"></i></span><small>21/12/21</small></span>
+                          </header>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
+                      tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                    </p>
+                  </div>
+
                 </div>
-            </div>
-        </nav>
-        <div class="capa px-6 is-flex-desktop is-flex-tablet is-justify-content-space-between is-align-items-center ">
-            <div class="is-flex-touch is-justify-content-center is-flex-tablet">
-            <img src="img/logo.png" class="is-1by1 mx-6">
-            </div>
-            <div class="texto is-hidden-mobile mx-6">
-                <p class="frase title has-text-right">Educar é semear com sabedoria e colher com paciência</p>
-                <p class="autor subtitle has-text-right">Augusto Cury</p>
-            </div>
-        </div>
-    </header>
-    <main class="section">
-        <div class="container">
-        <div class="columns is-variable is-3">
-            <div class="column is-two-thirds">
-                <article class="card">
-                    <div class="card-image">
-                        <figure class="image is-3by1 left">
-                            <img src="https://bulma.io/images/placeholders/128x128.png">
-                          </figure>
-                    </div>
-                    <div class="card-content p-5">
-                        <div class="content">
-                            <h3 class="title">Título do artigo</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt unde eius quas, facere sunt soluta recusandae voluptatum illum rerum eaque animi, quis tempora molestiae blanditiis dolore vero accusantium sapiente distinctio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque excepturi nostrum ipsam corrupti accusamus hic, autem numquam eligendi velit assumenda provident, illo ad debitis neque dignissimos fugiat expedita atque. Saepe.</p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="column is-hidden-mobile">
-                <article class="card">
-                    <div class="card-image content m-0 has-background-info p-4">
-                       <h4 class="title m-0 has-text-white">Postagens recentes</h4>
-                    </div>
-                    <div class="card-content p-5">
-                        <article class="media">
-                            <figure class="media-left">
-                              <p class="image is-64x64">
-                                <img src="https://bulma.io/images/placeholders/128x128.png">
-                              </p>
-                            </figure>
-                            <div class="media-content">
-                              <div class="content">
-                                  <h6 class="subtitle m-0">Postagem 1</h6>
-                                <p>
-                                    <span class="icon-text"><span class="icon"><i class="fi-xnsuxl-user-solid"></i></span><small>@nomeAutor</small></span>
-                                    <span class="icon-text"><span class="icon"><i class="fi-xnsuxl-calendar-solid"></i></span><small>21/12/21</small></span>
-                                  <br>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-                                </p>
-                              </div>
+              </article>
+              <article class="media">
+                <div class="media-content">
+                  <div class="content has-text-justified">
+                    <header>
+                    <h6 class="subtitle m-0">Postagem 1</h6>
                     
-                            </div>
-                          </article>
-                    </div>
-                </article>
+                      <span class="icon-text"><span class="icon"><i
+                            class="fi-xnsuxl-user-solid"></i></span><small>@nomeAutor</small></span>
+                      <span class="icon-text"><span class="icon"><i
+                            class="fi-xnsuxl-calendar-solid"></i></span><small>21/12/21</small></span>
+                    </header>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
+                      tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                    </p>
+
+                  </div>
+
+                </div>
+                <figure class="media-right">
+                  <p class="image is-64x64">
+                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                  </p>
+                </figure>
+
+              </article>
             </div>
+          </div>
         </div>
-        </div>
-    </main>
+      </div>
+    </div>
+  </main>
+  <footer class="footer has-background-info"></footer>
 </body>
 
 </html>
