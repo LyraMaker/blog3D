@@ -1,0 +1,15 @@
+                                    }
+                                }(sessionData, joinSessionData.extensionTab.id, storageData);
+                                return socket.loadSessionData(storedSessionData, userSettings), res;
+                            }(joinData);
+                        }
+                    }
+                }(message.data, sender).then(sendResponse).catch(receiveMessageOnError(sendResponse)), 
+                !0;
+            }
+            if (message.type == BackgroundMessageType.TEARDOWN) {
+                return async function(teardownMessage, sender) {
+                    if (sender.tab && sender.tab.id) {
+                        const tabId = sender.tab.id;
+                        teardownMessage.sender = "Service_Background", teardownMessage.target = "Content_Script", 
+                        await Messaging_MessagePasser.sendMessa
