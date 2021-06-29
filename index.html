@@ -10,15 +10,21 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
-  <title>Site do 3D Colégios</title>
+  <title>3D Colégios | Blog</title>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header caderno">
     <nav class="navbar is-transparent">
+      <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
       <div class="navbar-menu">
         <div class="navbar-end px-6">
           <a href="" class="navbar-item has-text-white is-uppercase has-text-weight-bold"><span class="icon-text"><span
@@ -39,6 +45,20 @@
         <p class="autor subtitle has-text-right">Augusto Cury</p>
       </div>
     </div>
+    <nav class="level container pb-4 has-text-weight-bold is-uppercase">
+      <p class="level-item p-4 m-0 has-background-info has-text-centered">
+        <a class="link has-text-white">Ensino Infantil</a>
+      </p>
+      <p class="level-item p-4 m-0 has-background-success has-text-centered">
+        <a class="link has-text-white">Ensino Fundamental</a>
+      </p>
+      <p class="level-item p-4 m-0 has-background-info-dark has-text-centered">
+        <a class="link has-text-white">Ensino Médio</a>
+      </p>
+      <p class="level-item p-4 m-0 has-background-danger has-text-centered">
+        <a class="link has-text-white">Comunicados</a>
+      </p>
+    </nav>
   </header>
   <main class="section">
     <div class="container">
@@ -50,9 +70,14 @@
                 <img src="https://bulma.io/images/placeholders/128x128.png">
               </figure>
             </div>
-            <div class="card-content p-5">
+            <div class="card-content">
               <div class="content has-text-justified">
                 <h3 class="title">Título do artigo</h3>
+                <div class="meta mb-4 has-text-centered is-hidden-desktop"><span class="icon-text"><span class="icon"><i
+                  class="fi-xnsuxl-user-solid"></i></span><small>@nomeAutor</small></span>
+            <span class="icon-text"><span class="icon"><i
+                  class="fi-xnsuxl-calendar-solid"></i></span><small>21/12/21</small></span>
+          </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt unde eius quas, facere sunt soluta
                   recusandae voluptatum illum rerum eaque animi, quis tempora molestiae blanditiis dolore vero
                   accusantium sapiente distinctio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
@@ -60,7 +85,13 @@
                   ad debitis neque dignissimos fugiat expedita atque. Saepe.</p>
               </div>
             </div>
+            <footer class="px-6 is-flex is-justify-content-space-between"> <div class="tags"><p class="is-uppercase has-text-weight-bold">Tags: <span><span class="tag button has-text-weight-bold is-uppercase is-success">Tag 1</span><span class="tag button has-text-weight-bold is-uppercase is-success">Tag 2</span><span class="tag button has-text-weight-bold is-uppercase is-success">Tag 3</span><span class="tag button has-text-weight-bold is-uppercase is-success">Tag 4</span></</p></div><div class="meta is-hidden-mobile is-hidden-touch"><span class="icon-text px-4"><span class="icon"><i
+              class="fi-xnsuxl-user-solid"></i></span><small>@nomeAutor</small></span>
+        <span class="icon-text"><span class="icon"><i
+              class="fi-xnsuxl-calendar-solid"></i></span><small>21/12/21</small></span>
+      </div></footer>
           </article>
+         
         </div>
         <div class="column is-hidden-mobile">
           <div class="card">
@@ -77,13 +108,13 @@
                 <div class="media-content">
                   <div class="content has-text-justified">
                     <header>
-                    <h6 class="subtitle m-0">Postagem 1</h6>
-                    <p>
-                      <span class="icon-text"><span class="icon"><i
-                            class="fi-xnsuxl-user-solid"></i></span><small>@nomeAutor</small></span>
-                      <span class="icon-text"><span class="icon"><i
-                            class="fi-xnsuxl-calendar-solid"></i></span><small>21/12/21</small></span>
-                          </header>
+                      <h6 class="subtitle m-0">Postagem 1</h6>
+                      <p>
+                        <span class="icon-text pr-3"><span class="icon"><i
+                              class="fi-xnsuxl-user-solid"></i></span><small>@nomeAutor</small></span>
+                        <span class="icon-text"><span class="icon"><i
+                              class="fi-xnsuxl-calendar-solid"></i></span><small>21/12/21</small></span>
+                    </header>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
                       tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
@@ -96,16 +127,16 @@
                 <div class="media-content">
                   <div class="content has-text-justified">
                     <header>
-                    <h6 class="subtitle m-0">Postagem 1</h6>
-                    
-                      <span class="icon-text"><span class="icon"><i
+                      <h6 class="subtitle m-0">Postagem 1</h6>
+
+                      <span class="icon-text pr-3"><span class="icon"><i
                             class="fi-xnsuxl-user-solid"></i></span><small>@nomeAutor</small></span>
                       <span class="icon-text"><span class="icon"><i
                             class="fi-xnsuxl-calendar-solid"></i></span><small>21/12/21</small></span>
                     </header>
-                  <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
-                      tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                    <p>
+       <p>
+               tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
                     </p>
 
                   </div>
@@ -124,7 +155,16 @@
       </div>
     </div>
   </main>
-  <footer class="footer has-background-info"></footer>
+  <footer class="footer has-text-centered has-background-info-dark">
+
+
+<picture class=" mb-6 lg3d image p-4  has-background-white is-128x128">
+  <img class="" src="img/logo.png">
+</picture>
+   
+    <p class="is-uppercase is-bold has-text-centered has-text-white">2020 | Todos os direitos reservados</p>
+</footer>
+  <script src="js/func.js"></script>
 </body>
 
 </html>
